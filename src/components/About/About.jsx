@@ -10,6 +10,10 @@ export default function About() {
         <img src={profPic} alt="profile picture" />
         <h2>Hello!</h2>
         <h3>{aboutText}</h3>
+      </div>
+      <div id="card-container">
+        <Card />
+        <Card />
         <Card />
       </div>
     </section>
