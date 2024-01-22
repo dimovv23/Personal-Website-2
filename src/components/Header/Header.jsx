@@ -30,6 +30,7 @@ export default function Header() {
           <br />
           GEORGI
         </h2>
+        <img src={logoImage} alt="logo" />
         <h3 className="blink_me">a_software_engineer</h3>
       </div>
     </section>

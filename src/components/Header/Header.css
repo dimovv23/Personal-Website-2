@@ -76,7 +76,7 @@
 }
 
 #navbar-logo img {
-  width: 4.2rem;
+  width: 3rem;
   margin: auto;
   vertical-align: middle;
   display: inline-block;
@@ -116,8 +116,9 @@
 }
 
 .title-wrapper {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
   padding-left: 7rem;
 }
 
@@ -131,6 +132,12 @@
   font-size: 2rem;
   margin-top: 4rem;
   width: 50%;
+}
+.title-wrapper img {
+  width: 22rem;
+  position: relative;
+  left: 25%;
+  top: 25%;
 }
 
 #intro {
