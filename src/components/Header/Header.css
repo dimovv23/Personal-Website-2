@@ -1,0 +1,148 @@
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2.2rem;
+  margin: 0 auto;
+  width: 55rem;
+  align-items: center;
+  background-color: #000000;
+  border-radius: 50px;
+  position: fixed;
+  top: 0.5rem;
+  left: 25%;
+  z-index: 1;
+}
+
+#navbar-list ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+  list-style: none;
+}
+
+#navbar-list ul li {
+  margin-left: 3rem;
+}
+
+#navbar-list ul li a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+#navbar-list ul li a:hover {
+  color: #f44761;
+}
+
+.scroll {
+  background-color: grey;
+  top: -5rem;
+  border-radius: 20px;
+  animation: fadedown 0.4 ease 1s forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+@keyframes fadedown {
+  0% {
+    top: -5rem;
+  }
+  100% {
+    top: 1.2rem;
+  }
+}
+
+#navbar-logo {
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: whitesmoke;
+}
+
+#navbar-logo a {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+#navbar-logo a:hover {
+  color: #f44761;
+}
+
+#navbar-logo img {
+  width: 4.2rem;
+  margin: auto;
+  vertical-align: middle;
+  display: inline-block;
+  transition: transform 0.2s;
+}
+#navbar-logo img:hover {
+  transform: scale(1.2);
+}
+
+.gradient-background {
+  background: linear-gradient(
+    310deg,
+    #000000,
+    #000000,
+    #520000,
+    #962f40,
+    #f44761,
+    #000000,
+    #000000,
+    #000000,
+    #000000
+  );
+  background-size: 180% 180%;
+  animation: gradient-animation 19s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.title-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 7rem;
+}
+
+.title-wrapper h2 {
+  font-size: 12rem;
+  margin-bottom: 0;
+  color: #000000;
+  line-height: 11rem;
+}
+.title-wrapper h3 {
+  font-size: 2rem;
+  margin-top: 4rem;
+  width: 50%;
+}
+
+#intro {
+  height: 100vh;
+}
+
+.blink_me {
+  animation: blinker 1.7s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
