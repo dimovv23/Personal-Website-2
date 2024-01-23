@@ -1,0 +1,77 @@
+#projects {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  /* relative to the section! */
+  position: relative;
+  top: 10%;
+  margin: 0 4rem;
+  gap: 2rem;
+}
+
+#single-project {
+  background-color: #555555;
+  height: 80%;
+  border-radius: 25px;
+  text-align: center;
+  padding: 0.7rem 0;
+  transition: transform 0.2s;
+}
+
+#single-project h3 {
+  font-size: 1.3rem;
+  color: whitesmoke;
+}
+
+#single-project p {
+  font-family: "Courier Prime", monospace;
+  text-transform: none;
+  padding: 0 0.2rem;
+  color: #ffb2b2;
+}
+
+#single-project:hover {
+  transform: scale(1.05);
+  background-color: #727272;
+}
+
+.gradient-background-dynamic {
+  background: linear-gradient(
+    310deg,
+    #000000,
+    #000000,
+    #000000,
+    #962f40,
+    #f44761,
+    #000000,
+    #000000,
+    #000000,
+    #000000
+  );
+  background-size: 180% 180%;
+  animation: gradient-animation-dynamic 19s ease infinite;
+}
+
+@keyframes gradient-animation-dynamic {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

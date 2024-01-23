@@ -10,7 +10,7 @@
   flex-direction: column;
 }
 
-#about img {
+.about-container img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -27,4 +27,97 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+#card-container img {
+  width: 30rem;
+}
+
+#about-card {
+  width: 400px;
+  height: 400px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: black;
+  color: #f44761;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2rem;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: black;
+  color: #f44761;
+  transform: rotateY(180deg);
+}
+
+/* Divider line */
+
+.divider {
+  display: flex;
+}
+
+.line {
+  flex-grow: 1;
+  height: 1px;
+  background: linear-gradient(to right, black, whitesmoke, black);
+  margin: 0;
+}
+
+.glow {
+  &:before,
+  &:after {
+    content: "";
+    flex-grow: 1;
+    height: 6px;
+    -webkit-filter: blur(5px);
+    border-radius: 5px;
+  }
+
+  &:before {
+    background: linear-gradient(to right, black, whitesmoke);
+  }
+
+  &:after {
+    background: linear-gradient(to left, black, whitesmoke);
+  }
 }

@@ -12,10 +12,13 @@ export default function About() {
         <h3>{aboutText}</h3>
       </div>
       <div id="card-container">
-        <Card />
-        <Card />
-        <Card />
+        <Card cardTitle={"sports"} />
+        <Card cardTitle={"tech"} />
+        <Card cardTitle={"design"} />
       </div>
+      <br />
+      <br />
+      <h2 className="divider line glow"></h2>
     </section>
   );
 }
