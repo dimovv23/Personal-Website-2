@@ -1,0 +1,40 @@
+#contact {
+  height: 15vh;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .first-color {
+  background-color: #242424;
+  height: 75%;
+  text-align: right;
+} */
+
+.second-color {
+  background-color: #000000;
+  position: relative;
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  left: 35%;
+  padding: 1rem 0 0 0;
+}
+
+.second-color a {
+  text-transform: none;
+  color: #f44761;
+  transition: transform 0.2s;
+}
+
+.second-color a:hover {
+  transform: scale(1.2);
+}
+
+#contact p {
+  text-align: center;
+  font-size: 0.8rem;
+  padding-bottom: 0.5rem;
+}

@@ -19,7 +19,7 @@ export default function Header() {
               <a href="#projects">Projects</a>
             </li>
             <li>
-              <a href="">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
