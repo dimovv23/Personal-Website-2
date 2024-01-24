@@ -20,7 +20,7 @@ export default function About() {
         <Card
           cardTitle={"sports"}
           paragraph={
-            "I really do have a passion for any kind of physical activities. Whether it's hitting the gym, shooting hoops on the basketball court, swimming... you name it. This passion of mine outside the world of coding keeps me energized and balanced, fueling my creativity."
+            "I really do have a passion for any kind of physical activities. Whether it's hitting the gym, swimming or running. This passion of mine outside the world of coding keeps me energized and balanced, fueling my creativity."
           }
         />
         <Card cardTitle={"tech"} paragraph={""} />
