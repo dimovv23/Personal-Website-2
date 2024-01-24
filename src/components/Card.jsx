@@ -1,6 +1,6 @@
 import "../components/About/About.css";
 
-export default function Card({ cardTitle }) {
+export default function Card({ cardTitle, paragraph }) {
   return (
     <>
       <div id="about-card" className="flip-card">
@@ -9,9 +9,7 @@ export default function Card({ cardTitle }) {
             <p>{cardTitle}</p>
           </div>
           <div className="flip-card-back">
-            <h1>This is h1</h1>
-            <p>This is p</p>
-            <p>This is p</p>
+            <p>{paragraph}</p>
           </div>
         </div>
       </div>

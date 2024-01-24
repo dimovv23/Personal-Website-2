@@ -24,6 +24,7 @@
 #single-project {
   background-color: #555555;
   height: 80%;
+
   border-radius: 25px;
   text-align: center;
   padding: 0.7rem 0;
@@ -33,12 +34,17 @@
 #single-project h3 {
   font-size: 1.3rem;
   color: whitesmoke;
+  margin-bottom: 0;
 }
 
 #single-project p {
-  font-family: "Courier Prime", monospace;
+  font-family: "Stylish", serif;
   text-transform: none;
   padding: 0 0.2rem;
+  font-size: 1.1rem;
+  position: relative;
+  left: 15%;
+  width: 70%;
   color: #ffb2b2;
 }
 

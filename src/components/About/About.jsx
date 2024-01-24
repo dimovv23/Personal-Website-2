@@ -1,6 +1,5 @@
 import "../About/About.css";
 import profPic from "../../assets/Untitled.png";
-import { aboutText } from "../../about.js";
 import Card from "../Card.jsx";
 
 export default function About() {
@@ -9,12 +8,23 @@ export default function About() {
       <div className="about-container">
         <img src={profPic} alt="profile picture" />
         <h2>Hello!</h2>
-        <h3>{aboutText}</h3>
+        <h3>
+          I'm Georgi Dimov,
+          <br /> a final-year student in the Faculty of Computer Systems and
+          Technologies at the "Technical University of Sofia".
+          <br />
+          Here is more about me
+        </h3>
       </div>
       <div id="card-container">
-        <Card cardTitle={"sports"} />
-        <Card cardTitle={"tech"} />
-        <Card cardTitle={"design"} />
+        <Card
+          cardTitle={"sports"}
+          paragraph={
+            "I really do have a passion for any kind of physical activities. Whether it's hitting the gym, shooting hoops on the basketball court, swimming... you name it. This passion of mine outside the world of coding keeps me energized and balanced, fueling my creativity."
+          }
+        />
+        <Card cardTitle={"tech"} paragraph={""} />
+        <Card cardTitle={"design"} paragraph={""} />
       </div>
       <br />
       <br />
