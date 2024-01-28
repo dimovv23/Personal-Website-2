@@ -1,5 +1,5 @@
 #about {
-  height: 100vh;
+  height: 110vh;
   background-color: #242424;
 }
 
@@ -11,11 +11,11 @@
 }
 
 .about-container img {
-  width: 200px;
-  height: 200px;
+  width: 11rem;
+  height: 11rem;
   border-radius: 50%;
   object-fit: contain;
-  margin-top: 5.5rem;
+  margin-top: 6%;
 }
 #about h2 {
   font-size: 2rem;
@@ -28,7 +28,7 @@
   padding: 0 7rem;
   font-family: "Stylish", serif;
   text-transform: none;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   width: 50%;
 }
 
@@ -43,8 +43,8 @@
 }
 
 #about-card {
-  width: 25rem;
-  height: 25rem;
+  width: 21rem;
+  height: 21rem;
 }
 
 .flip-card {
@@ -102,42 +102,10 @@
 
 .flip-card-back p {
   position: relative;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   height: 80%;
   top: 5%;
   padding: 0.5rem 0.5rem;
   text-transform: none;
   font-family: "Stylish", serif;
-}
-
-/* Divider line */
-
-.divider {
-  display: flex;
-}
-
-.line {
-  flex-grow: 1;
-  height: 1px;
-  background: linear-gradient(to right, black, whitesmoke, black);
-  margin: 0;
-}
-
-.glow {
-  &:before,
-  &:after {
-    content: "";
-    flex-grow: 1;
-    height: 6px;
-    -webkit-filter: blur(5px);
-    border-radius: 5px;
-  }
-
-  &:before {
-    background: linear-gradient(to right, black, whitesmoke);
-  }
-
-  &:after {
-    background: linear-gradient(to left, black, whitesmoke);
-  }
 }

@@ -9,8 +9,7 @@ export default function About() {
         <img src={profPic} alt="profile picture" />
         <h2>Hello!</h2>
         <h3>
-          I'm Georgi Dimov,
-          <br /> a final-year student in the Faculty of Computer Systems and
+          I'm, a final-year student in the Faculty of Computer Systems and
           Technologies at the "Technical University of Sofia".
           <br />
           Here is more about me
@@ -28,7 +27,6 @@ export default function About() {
       </div>
       <br />
       <br />
-      <h2 className="divider line glow"></h2>
     </section>
   );
 }

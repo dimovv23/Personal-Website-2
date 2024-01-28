@@ -1,5 +1,5 @@
 #projects {
-  height: 110vh;
+  height: 130vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,6 +8,7 @@
 
 #projects h2 {
   font-size: 2.5rem;
+  margin-top: 3rem;
 }
 
 .projects-container {
@@ -16,15 +17,13 @@
   grid-template-rows: 1fr 1fr 1fr;
   /* relative to the section! */
   position: relative;
-  top: 10%;
-  margin: 0 4rem;
+  margin: 1rem 4rem;
   gap: 2rem;
 }
 
 #single-project {
   background-color: #555555;
   height: 80%;
-
   border-radius: 25px;
   text-align: center;
   padding: 0.7rem 0;
