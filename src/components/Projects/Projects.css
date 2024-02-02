@@ -55,15 +55,17 @@
 .gradient-background-dynamic {
   background: linear-gradient(
     310deg,
-    #000000,
-    #000000,
-    #000000,
-    #962f40,
     #f44761,
-    #000000,
-    #000000,
-    #000000,
-    #000000
+    #f44761,
+    #a53e3e,
+    #111111,
+    #111111,
+    #111111,
+    #111111,
+    #111111,
+    #111111,
+    #111111,
+    #111111
   );
   background-size: 180% 180%;
   animation: gradient-animation-dynamic 19s ease infinite;

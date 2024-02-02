@@ -1,40 +1,49 @@
 #contact {
-  height: 15vh;
-  background-color: #000000;
+  height: 60vh;
   display: flex;
   flex-direction: column;
 }
 
-/* .first-color {
-  background-color: #242424;
-  height: 75%;
-  text-align: right;
-} */
-
-.second-color {
-  background-color: #000000;
+.contact-container {
   position: relative;
   height: 100%;
-  width: 30%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  left: 35%;
+  width: 40%;
+  left: 30%;
   padding: 1rem 0 0 0;
 }
 
-.second-color a {
-  text-transform: none;
-  color: #f44761;
-  transition: transform 0.2s;
-}
-
-.second-color a:hover {
-  transform: scale(1.2);
-}
-
-#contact p {
+.contact-container h2 {
+  font-size: 6.3rem;
   text-align: center;
-  font-size: 0.8rem;
-  padding-bottom: 0.5rem;
+  margin: 0;
+}
+
+.contact-container p {
+  font-weight: 200;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.email {
+  font-size: 1.3rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.contact-container a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+
+.contact-container a:hover {
+  color: #cf3c52;
+}
+
+.pinkColor {
+  color: #f44761;
 }

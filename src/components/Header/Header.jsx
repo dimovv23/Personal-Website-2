@@ -1,7 +1,33 @@
 import "../Header/Header.css";
 import logoImage from "../../assets/Picture12.png";
+import { useState } from "react";
 
 export default function Header() {
+  const [isHovered, setIsHovered] = useState([false, false, false]);
+
+  const handleMouseEnter = (index) => {
+    setIsHovered((prevHovered) => {
+      const updatedHovered = [...prevHovered];
+      updatedHovered[index] = true;
+      return updatedHovered;
+    });
+  };
+
+  const handleMouseLeave = (index) => {
+    setIsHovered((prevHovered) => {
+      const updatedHovered = [...prevHovered];
+      updatedHovered[index] = false;
+      return updatedHovered;
+    });
+  };
+
+  function scroll() {
+    const section = document.getElementById(`contact`);
+    if (section) {
+      section.scrollIntoView();
+    }
+  }
+
   return (
     <section id="intro" className="gradient-background">
       <nav id="navbar">
@@ -11,9 +37,36 @@ export default function Header() {
           </a>
         </div>
         <div className="navbar-buttons">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          <a
+            href="#about"
+            className={
+              isHovered[0] ? "navbar-button-enter" : "navbar-button-leave"
+            }
+            onMouseEnter={() => handleMouseEnter(0)}
+            onMouseLeave={() => handleMouseLeave(0)}
+          >
+            About
+          </a>
+          <a
+            href="#projects"
+            className={
+              isHovered[1] ? "navbar-button-enter" : "navbar-button-leave"
+            }
+            onMouseEnter={() => handleMouseEnter(1)}
+            onMouseLeave={() => handleMouseLeave(1)}
+          >
+            Projects
+          </a>
+          <a
+            href="#contact"
+            className={
+              isHovered[2] ? "navbar-button-enter" : "navbar-button-leave"
+            }
+            onMouseEnter={() => handleMouseEnter(2)}
+            onMouseLeave={() => handleMouseLeave(2)}
+          >
+            Contact
+          </a>
         </div>
       </nav>
       <div className="contacts-bar">
@@ -66,6 +119,12 @@ export default function Header() {
         <h3 className="blink_me">
           I'm a <span className="pinkColor occupation">software engineer</span>
         </h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue
+          est, aliquam quis lacus in, fermentum viverra lectus. Sed nec rutrum
+          risus. Interdum et malesuada fames ac ante ipsum primis in faucibus.{" "}
+        </p>
+        <button onClick={scroll}>Contact me</button>
       </div>
     </section>
   );
