@@ -1,37 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
 #navbar {
   display: flex;
-  justify-content: space-between;
-  padding: 0 2.2rem;
-  margin: 0 auto;
-  width: 60%;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  padding: 0;
+  margin: 0 auto;
+  width: 4rem;
+  height: 100vh;
   background-color: #000000;
-  border-radius: 50px;
   position: fixed;
-  top: 0.5rem;
-  left: 20%;
-
+  top: 0;
+  left: 0;
   z-index: 1;
 }
-#navbar-list ul {
+.navbar-buttons {
   display: flex;
-  justify-content: space-evenly;
-  padding: 0;
-  list-style: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 40%;
+  width: 3rem;
 }
 
-#navbar-list ul li {
-  margin-left: 3rem;
-}
-
-#navbar-list ul li a {
+.navbar-buttons a {
   font-size: 1rem;
   text-decoration: none;
   color: whitesmoke;
   font-weight: bold;
+  transform: rotate(90deg);
 }
 
-#navbar-list ul li a:hover {
+.navbar-buttons a:hover {
   color: #f44761;
 }
 
@@ -86,54 +88,68 @@
   transform: scale(1.2);
 }
 
-.gradient-background {
-  background: linear-gradient(
-    310deg,
-    #000000,
-    #000000,
-    #520000,
-    #962f40,
-    #f44761,
-    #000000,
-    #000000,
-    #000000,
-    #000000
-  );
-  background-size: 180% 180%;
-  animation: gradient-animation 9s ease forwards;
+.contacts-bar {
+  width: 100vw;
+  background-color: transparent;
+  position: fixed;
+  left: 4rem;
+  backdrop-filter: blur(5px);
+  height: 4.5rem;
+  z-index: 3;
 }
 
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-  /* 100% {
-    background-position: 0% 50%;
-  } */
+.contacts-bar-buttons {
+  position: relative;
+  top: 25%;
+  left: 3rem;
+  width: 9rem;
+  text-decoration: none;
+}
+
+.contacts-bar-buttons a {
+  position: relative;
+  top: 25%;
+  color: #837f7f;
+  margin: 0.8rem;
+}
+
+.contacts-bar-buttons a:hover {
+  color: #f44761;
 }
 
 .title-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 1fr;
-  padding-left: 7rem;
+  position: absolute;
+  height: 50%;
+  width: 45%;
+  left: 27.5%;
+  top: 15%;
 }
 
-.title-wrapper h2 {
-  font-size: 12rem;
+.title-wrapper h1 {
+  font-size: 5.6rem;
   margin-bottom: 0;
-  color: #000000;
-  line-height: 11rem;
+  color: white;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
 }
 .title-wrapper h3 {
-  font-size: 2rem;
-  margin-top: 4rem;
+  font-size: 2.6rem;
+  margin: 0;
   width: 70%;
   height: 20%;
   animation: fadeIn 2s ease-in;
+  text-transform: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+
+.occupation {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.pinkColor {
+  color: #f44761;
 }
 
 @keyframes fadeIn {
@@ -154,6 +170,7 @@
 
 #intro {
   height: 100vh;
+  display: flex;
 }
 
 .blink_me {
@@ -163,5 +180,34 @@
 @keyframes blinker {
   50% {
     opacity: 0;
+  }
+}
+
+.gradient-background {
+  background: linear-gradient(
+    310deg,
+    #f44761,
+    #f44761,
+    #a53e3e,
+    #111111,
+    #111111,
+    #111111,
+    #111111,
+    #111111,
+    #111111,
+    #111111,
+    #111111,
+    #111111
+  );
+  background-size: 180% 180%;
+  animation: gradient-animation 2.5s ease forwards;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
   }
 }
