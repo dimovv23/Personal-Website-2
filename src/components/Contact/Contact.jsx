@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <section id="contact">
       <div className="contact-container">
-        <Reveal>
+        <Reveal width="fit-content">
           <h2>
             Contact<span className="pinkColor">.</span>
           </h2>

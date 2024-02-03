@@ -119,7 +119,7 @@ export default function Header() {
         </div>
       </div>
       <div className="title-wrapper">
-        <Reveal>
+        <Reveal width="fit-content">
           <h1>
             Hey, I'm Georgi<span className="pinkColor">.</span>
           </h1>
@@ -132,9 +132,10 @@ export default function Header() {
         </Reveal>
         <Reveal>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue
-            est, aliquam quis lacus in, fermentum viverra lectus. Sed nec rutrum
-            risus. Interdum et malesuada fames ac ante ipsum primis in faucibus.{" "}
+            I've spent the last 2 years developing my skills and knowledge for
+            software development. If you need a passionate software engineer for
+            your project, don't hesitate to contact me! Let's connect and bring
+            your vision to life!
           </p>
         </Reveal>
         <Reveal width="9rem">

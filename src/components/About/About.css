@@ -1,55 +1,68 @@
 #about {
-  height: 110vh;
+  height: fit-content;
+}
+
+.about-wrapper {
   display: flex;
   align-items: start;
-  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  left: 27.5%;
+  height: fit-content;
+  width: 45%;
+}
+
+.about-wrapper h2 {
+  font-size: 4rem;
+  color: white;
+  width: 100%;
+  border-bottom: solid #f44761;
+  border-width: 1px;
+  margin: 0;
+  margin-bottom: 3rem;
+}
+
+.about-header {
+  display: flex;
+  justify-content: start;
+  width: 100%;
 }
 
 .about-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: start;
-  flex-direction: column;
-  margin-bottom: 10rem;
-  width: 50%;
-}
+  display: grid;
+  grid-template-columns: 2fr 1.25fr;
 
-#about h2 {
-  width: fit-content;
-  font-size: 4rem;
-  color: white;
-  margin-bottom: 0;
   position: relative;
-  left: 7rem;
-  text-transform: capitalize;
+  height: fit-content;
+  width: fit-content;
 }
 
-#about h3 {
+.about-container p {
   text-align: start;
   position: relative;
-  left: 7rem;
-  font-family: "DotGothic16", sans-serif;
   text-transform: none;
-  font-size: 1.7rem;
-  width: 80%;
+  font-size: 1.2rem;
+  font-weight: 200;
+  width: 100%;
+  margin-top: 0;
 }
 
-#card-container {
+.text-wrapper {
+  height: fit-content;
+}
+
+.about-links {
   display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  height: 80%;
-  width: 40%;
+  gap: 0.5rem;
+  margin-top: 1rem;
 }
 
-#about-card {
-  width: 16rem;
-  height: 16rem;
-  border-radius: 25px;
-  background-color: black;
-  border: none;
+.about-links a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #837f7f;
 }
 
-#about-card img {
-  width: 8rem;
+.about-links a:hover {
+  color: #f44761;
 }
