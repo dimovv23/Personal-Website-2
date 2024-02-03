@@ -149,15 +149,15 @@
 .title-wrapper h3 {
   font-size: 2.3rem;
   margin: 0;
-  width: 70%;
+  width: fit-content;
   height: 20%;
-  animation: fadeIn 2s ease-in;
   text-transform: none;
   font-family: "Poppins", sans-serif;
   font-weight: 200;
 }
 
 .title-wrapper p {
+  width: fit-content;
   font-weight: 200;
   font-size: 1.3rem;
   margin: 0;
@@ -187,15 +187,6 @@
   color: #f44761;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .title-wrapper img {
   width: 22rem;
   position: relative;
@@ -204,18 +195,8 @@
 }
 
 #intro {
-  height: 100vh;
+  height: 90vh;
   display: flex;
-}
-
-.blink_me {
-  animation: blinker 1.7s linear infinite;
-}
-
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
 }
 
 .gradient-background {

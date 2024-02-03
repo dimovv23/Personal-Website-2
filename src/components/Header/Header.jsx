@@ -1,25 +1,31 @@
 import "../Header/Header.css";
 import logoImage from "../../assets/Picture12.png";
 import { useState } from "react";
+import Reveal from "../utils/Reveal";
 
 export default function Header() {
   const [isHovered, setIsHovered] = useState([false, false, false]);
+  const [activeLink, setActiveLink] = useState(null);
 
-  const handleMouseEnter = (index) => {
+  const handleLinkClick = (index) => {
+    setActiveLink(index);
+  };
+
+  function handleMouseEnter(index) {
     setIsHovered((prevHovered) => {
       const updatedHovered = [...prevHovered];
       updatedHovered[index] = true;
       return updatedHovered;
     });
-  };
+  }
 
-  const handleMouseLeave = (index) => {
+  function handleMouseLeave(index) {
     setIsHovered((prevHovered) => {
       const updatedHovered = [...prevHovered];
       updatedHovered[index] = false;
       return updatedHovered;
     });
-  };
+  }
 
   function scroll() {
     const section = document.getElementById(`contact`);
@@ -113,18 +119,27 @@ export default function Header() {
         </div>
       </div>
       <div className="title-wrapper">
-        <h1>
-          Hey, I'm Georgi<span className="pinkColor">.</span>
-        </h1>
-        <h3 className="blink_me">
-          I'm a <span className="pinkColor occupation">software engineer</span>
-        </h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue
-          est, aliquam quis lacus in, fermentum viverra lectus. Sed nec rutrum
-          risus. Interdum et malesuada fames ac ante ipsum primis in faucibus.{" "}
-        </p>
-        <button onClick={scroll}>Contact me</button>
+        <Reveal>
+          <h1>
+            Hey, I'm Georgi<span className="pinkColor">.</span>
+          </h1>
+        </Reveal>
+        <Reveal width="fit-content">
+          <h3>
+            I'm a{" "}
+            <span className="pinkColor occupation">software engineer</span>
+          </h3>
+        </Reveal>
+        <Reveal>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue
+            est, aliquam quis lacus in, fermentum viverra lectus. Sed nec rutrum
+            risus. Interdum et malesuada fames ac ante ipsum primis in faucibus.{" "}
+          </p>
+        </Reveal>
+        <Reveal width="9rem">
+          <button onClick={scroll}>Contact me</button>
+        </Reveal>
       </div>
     </section>
   );

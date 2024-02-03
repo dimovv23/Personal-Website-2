@@ -1,7 +1,7 @@
 #about {
   height: 110vh;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
 }
 
@@ -14,18 +14,10 @@
   width: 50%;
 }
 
-.about-container img {
-  width: 20rem;
-  height: 20rem;
-  border-radius: 50%;
-  object-fit: contain;
-  margin-top: 6%;
-  position: relative;
-  left: 7rem;
-}
 #about h2 {
+  width: fit-content;
   font-size: 4rem;
-  color: #ffb2b2;
+  color: white;
   margin-bottom: 0;
   position: relative;
   left: 7rem;

@@ -1,4 +1,6 @@
 #contact {
+  background: linear-gradient(180deg, #111111, #000000);
+  background-size: 180% 180%;
   height: 60vh;
   display: flex;
   flex-direction: column;
