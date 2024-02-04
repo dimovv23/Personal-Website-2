@@ -1,5 +1,6 @@
 #about {
-  height: fit-content;
+  height: 70vh;
+  padding-top: 4rem;
 }
 
 .about-wrapper {

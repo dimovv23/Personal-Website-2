@@ -5,11 +5,6 @@ import Reveal from "../utils/Reveal";
 
 export default function Header() {
   const [isHovered, setIsHovered] = useState([false, false, false]);
-  const [activeLink, setActiveLink] = useState(null);
-
-  const handleLinkClick = (index) => {
-    setActiveLink(index);
-  };
 
   function handleMouseEnter(index) {
     setIsHovered((prevHovered) => {

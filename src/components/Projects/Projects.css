@@ -1,84 +1,63 @@
 #projects {
-  height: 130vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#projects h2 {
-  font-size: 2.5rem;
-  margin-top: 3rem;
+  height: 105vh;
+  padding-top: 4rem;
 }
 
 .projects-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  /* relative to the section! */
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #232323;
+  border-radius: 5px;
+  height: 12rem;
+  width: 100%;
+  padding: 1rem;
+}
+.project:hover {
+  background-color: #080808;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-bottom: solid #f44761;
+  border-width: 1px;
+}
+
+.project h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #f44761;
+}
+.project p {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.projects-wrapper {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
   position: relative;
-  margin: 1rem 4rem;
-  gap: 2rem;
+  left: 27.5%;
+  height: fit-content;
+  width: 45%;
 }
 
-#single-project {
-  background-color: #555555;
-  height: 80%;
-  border-radius: 25px;
-  text-align: center;
-  padding: 0.7rem 0;
-  transition: transform 0.2s;
-}
-
-#single-project h3 {
-  font-size: 1.3rem;
-  color: whitesmoke;
-  margin-bottom: 0;
-}
-
-#single-project p {
-  font-family: "Stylish", serif;
-  text-transform: none;
-  padding: 0 0.2rem;
-  font-size: 1.1rem;
-  position: relative;
-  left: 15%;
-  width: 70%;
-  color: #ffb2b2;
-}
-
-#single-project:hover {
-  transform: scale(1.05);
-  background-color: #727272;
-}
-
-.gradient-background-dynamic {
-  background: linear-gradient(
-    310deg,
-    #f44761,
-    #f44761,
-    #a53e3e,
-    #111111,
-    #111111,
-    #111111,
-    #111111,
-    #111111,
-    #111111,
-    #111111,
-    #111111
-  );
-  background-size: 180% 180%;
-  animation: gradient-animation-dynamic 19s ease infinite;
-}
-
-@keyframes gradient-animation-dynamic {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+.projects-wrapper h2 {
+  font-size: 4rem;
+  color: white;
+  width: 100%;
+  border-bottom: solid #f44761;
+  border-width: 1px;
+  margin: 0;
+  margin-bottom: 3rem;
+  text-align: end;
 }

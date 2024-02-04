@@ -1,7 +1,7 @@
 #contact {
   background: linear-gradient(180deg, #111111, #000000);
   background-size: 180% 180%;
-  height: 60vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
 }
@@ -15,7 +15,7 @@
   height: fit-content;
   width: fit-content;
   left: 25%;
-  padding: 1rem 0 0 0;
+  padding: 9rem 0 0 0;
 }
 
 .contact-container h2 {
