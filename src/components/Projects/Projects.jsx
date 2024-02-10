@@ -31,6 +31,14 @@ export default function Projects() {
           </Reveal>
           <Reveal width="100%">
             <Project
+              url={"https://github.com/dimovv23/Notes-App"}
+              projectName={"Notes"}
+              technologies={"HTML - CSS - React"}
+              description={"Web App cloner of 'Notes'"}
+            />
+          </Reveal>
+          <Reveal width="100%">
+            <Project
               url={"https://github.com/dimovv23/Blockchain"}
               projectName={"Blockchain App"}
               technologies={"CSS - EJS - JavaScript"}
